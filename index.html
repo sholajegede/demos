@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demos · Shola Jegede</title>
+  <meta name="description" content="Working builds from my talks and articles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=DM+Mono:wght@400&family=DM+Sans:wght@500;700&display=swap" />
+  <style>
+    :root { --ink:#070607; --canvas:#e2e2df; --paper:#f7f6f2; --muted:#070607a3; --faint:#07060766; --accent:#fc5000; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--canvas); color: var(--ink); font-family: "DM Sans", system-ui, sans-serif; font-weight: 500; -webkit-font-smoothing: antialiased; }
+    .shell { max-width: 880px; margin: 0 auto; padding: 28px 16px 64px; }
+    .top { display: flex; justify-content: space-between; font-family: "DM Mono", monospace; font-size: 13px; }
+    .top a { color: var(--ink); }
+    h1 { font-family: "Archivo", sans-serif; font-weight: 900; font-stretch: 68%; font-size: clamp(56px, 12vw, 112px); line-height: .9; margin: 56px 0 12px; }
+    .lede { color: var(--muted); font-size: 17px; margin: 0 0 40px; max-width: 520px; }
+    a.card { display: block; background: var(--paper); border-radius: 22px; padding: 24px; color: var(--ink); text-decoration: none; transition: transform .12s ease; }
+    a.card:hover { transform: translateY(-2px); }
+    .kicker { font-family: "DM Mono", monospace; font-size: 12px; color: var(--faint); }
+    .card h2 { font-family: "Archivo", sans-serif; font-weight: 900; font-stretch: 74%; font-size: 34px; margin: 10px 0 8px; }
+    .card p { color: var(--muted); margin: 0 0 16px; line-height: 1.5; }
+    .go { font-family: "DM Mono", monospace; font-size: 13px; color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="top"><span>demos.sholajegede.com</span><a href="https://sholajegede.com">sholajegede.com ↗</a></div>
+    <h1>Demos</h1>
+    <p class="lede">Working builds from my talks and articles. Each one runs live, and the code is on GitHub.</p>
+    <a class="card" href="/agent-identity">
+      <div class="kicker">DevFest Lagos 2026 · Kinde + Convex</div>
+      <h2>Agent Identity Helpdesk</h2>
+      <p>A rebuild of the July 2025 Supabase MCP leak. One support desk, five modes, and each mode fails in a way the next one fixes.</p>
+      <span class="go">Open the desk →</span>
+    </a>
+  </div>
+</body>
+</html>

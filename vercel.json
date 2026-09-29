@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/agent-identity",
+      "destination": "https://agent-identity-helpdesk.vercel.app/agent-identity"
+    },
+    {
+      "source": "/agent-identity/:path*",
+      "destination": "https://agent-identity-helpdesk.vercel.app/agent-identity/:path*"
+    }
+  ]
+}
