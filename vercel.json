@@ -1,14 +1,18 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/agent-identity",
-      "destination": "https://agent-identity-helpdesk.vercel.app/agent-identity"
+      "source": "/",
+      "has": [{ "type": "host", "value": "demos.sholajegede.com" }],
+      "destination": "https://sholajegede.com/demos",
+      "permanent": true
     },
     {
-      "source": "/agent-identity/:path*",
-      "destination": "https://agent-identity-helpdesk.vercel.app/agent-identity/:path*"
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "demos.sholajegede.com" }],
+      "destination": "https://sholajegede.com/demos/:path*",
+      "permanent": true
     }
   ]
 }
