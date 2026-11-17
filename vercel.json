@@ -1,16 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "cleanUrls": true,
   "redirects": [
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "demos.sholajegede.com" }],
       "destination": "https://sholajegede.com/demos",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "demos.sholajegede.com" }],
       "destination": "https://sholajegede.com/demos/:path*",
       "permanent": true
     }
